@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Link -->
+    <a href="https://www.infobae.com">Ir a google</a>
+    <!--Boton-->
+    <button>Enviar</button>
+    <!-- Contenedores-->
+    <div>
+      <div style="background-color: red">Gaston</div>
+      <div>Barbaccia</div>
+    </div>
+    <!-- Listado -->
+    <ul>
+      <li>Zapatillas</li>
+      <li>Reloj</li>
+      <li>Gorra</li>
+      <li>Jeans</li>
+    </ul>
+    <!-- Multiples opciones -->
+    <select name="select">
+      <option value="value1" selected></option>
+      <option value="value1">Value 1</option>
+      <option value="value2">Value 2</option>
+      <option value="value3">Value 3</option>
+    </select>
+    <!-- Separador / Salto de linea-->
+    <br />
+    <br />
+    <!-- Ingreso de datos -->
+    <div>
+      <!-- Etiquetas -->
+      <label>Nombre</label> <input placeholder="Ingrese su nombre" />
+      <label>Apellido</label> <input placeholder="Ingrese su apellido" />
+      <label>Precio</label> <input placeholder="Ej. $ 10.299" />
+    </div>
+    <!-- Opciones para tildar -->
+    <div>
+      <input type="checkbox" value="Femenino" /> Femenino
+      <input type="checkbox" value="Masculino" /> Masculino
+    </div>
+    <!-- Opciones para marcar -->
+    <div>
+      <input type="radio" value="Si" name="radio_opcion" /> Si
+      <input type="radio" value="No" name="radio_opcion" /> No
+    </div>
+    <br />
+    <br />
+    <!-- Formulario -->
+    <form action="enviado.php" method="POST">
+      <div>
+        <label>Nombre</label>
+        <input id="nombre" name="nombre" placeholder="Ingrese su nombre" />
+        <label>Apellido</label>
+        <input
+          id="apellido"
+          name="apellido"
+          placeholder="Ingrese su apellido"
+        />
+        <label>DNI</label>
+        <input
+          id="dni"
+          name="dni"
+          placeholder="Ingrese su documento de identidad"
+        />
+        <div><button>Enviar</button></div>
+      </div>
+    </form>
+    <!-- Tablas -->
+    <table>
+      <!-- Indica que titulos van en la cabecera -->
+      <thead>
+        <!-- Fila -->
+        <tr>
+          <!-- Nombre de las columnas / titulos -->
+          <th>País</th>
+          <!-- columnas -->
+          <th>Capital</th>
+          <!-- columnas -->
+          <th>Moneda</th>
+          <!-- columnas -->
+        </tr>
+      </thead>
+      <!-- Contenedor de todo los registros-->
+      <tbody>
+        <!-- Fila -->
+        <tr>
+          <!-- Columna -->
+          <td>Reino de España</td>
+          <td>Madrid</td>
+          <td>Euro</td>
+        </tr>
+        <tr>
+          <td>Reino de España</td>
+          <td>Madrid</td>
+          <td>Euro</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
